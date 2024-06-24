@@ -1,0 +1,407 @@
+/* import from Google Fonts - Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+html{
+    height: -webkit-fill-available;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* 
+    
+Universal Selector (*) apply to all elements
+
+
+border-box Explanation
+    If you set box-sizing: border-box; on an element, padding and border are included in the width and height: 
+    For Example div2 has the same parameter as div1 and only padding : 50px is extra. 
+    But both div1 & div2 has box-sizing: border-box. Therefore the box will be the same size. 
+
+        .div1 {
+             width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        .div2 {
+            width: 300px;
+            height: 100px;  
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        } 
+    
+    */ 
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+body{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+    font-family: 'poppins' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* 
+
+background-image Syntax
+    background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+    
+    
+display: flex Explanation    
+    By using display flex in parent element, child elements automatically align like column or row with auto width and auto height.
+
+
+justify-content Syntax
+    justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit;
+
+
+Overflow Explanation
+    The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+    The overflow property has the following values:
+        visible - Default. The overflow is not clipped. The content renders outside the element's box
+        hidden - The overflow is clipped, and the rest of the content will be invisible
+        scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+        auto - Similar to scroll, but it adds scrollbars only when necessary
+
+
+margin: 0 Explanation
+    margin: 0 auto is a CSS property that sets the top and bottom margins of an element to 0 and centers it horizontally within its parent element.
+    This technique is often used to center a block-level element such as a div or a image
+
+
+*/
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+.quiz-header{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100 , 100 , 0.1);
+    width: 600px;
+    overflow:hidden; 
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/*
+    
+
+border-radius Explanation
+    The border-radius property defines the radius of the element's corners.
+    Tip: This property allows you to add rounded corners to elements! 
+    This property can have from one to four values. Here are the rules:
+    Four values - border-radius: 15px 50px 30px 5px; 
+    (first value applies to top-left corner) 
+    (second value applies to top-right corner)
+    (third value applies to bottom-right corner)
+    (fourth value applies to bottom-left corner)
+
+box-shadow Syntax
+    box-shadow:      none;
+    box-shadow:      h-offset  v-offset  blur  spread  color ;
+    box-shadow:      inset;
+    box-shadow:      initial;
+    box-shadow:      inherit;
+
+    none	
+        Default value. No shadow is displayed
+
+    h-offset	(Required) 
+        The horizontal offset of the shadow. 
+        A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box.
+
+    v-offset	(Required)
+        The vertical offset of the shadow.
+        A positive value puts the shadow below the box, a negative value puts the shadow above the box.
+
+    blur	(Optional) 
+        The blur radius. 
+        The higher the number, the more blurred the shadow will be.
+
+    spread	(Optional) 
+        The spread radius.
+        A positive value increases the size of the shadow, a negative value decreases the size of the shadow.
+
+    color	(Optional) 
+        The color of the shadow. The default value is the text color. Look at CSS Color Values for a complete list of possible color values.
+        Note: In Safari (on PC) the color parameter is required. If you do not specify the color, the shadow is not displayed at all.
+
+    inset	(Optional) 
+        Changes the shadow from an outer shadow (outset) to an inner shadow.
+
+    initial	
+        It sets the property to its default value.
+
+    Inherit	
+        It inherits the property from its parent element.
+
+
+Overflow Explanation
+    The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+    The overflow property has the following values:
+        visible - Default. The overflow is not clipped. The content renders outside the element's box
+        hidden - The overflow is clipped, and the rest of the content will be invisible
+        scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+        auto - Similar to scroll, but it adds scrollbars only when necessary
+
+
+
+*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.quiz-header{
+    padding: 0;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* 
+
+padding
+    Padding is used to create space around an element's content, inside of any defined borders.
+
+    padding properties can be set up as
+        padding (it means all four side)
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left
+
+    padding values can be set up as
+        length  -   specifies a padding in px, pt, cm, etc.
+        %       -   specifies a padding in % of the width of the containing element
+        inherit -   specifies that the padding should be inherited from the parent element
+
+*/
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+h3{
+    padding: 3rem 9rem 0 9rem;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/*
+
+margin: 0 Explanation
+    margin: 0 auto is a CSS property that sets the top and bottom margins of an element to 0 and centers it horizontally within its parent element.
+    This technique is often used to center a block-level element such as a div or a image
+
+*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+ul{
+    list-style-type: none;
+    padding: 0 5rem 0 5rem;
+    
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/*
+
+
+Types of list style
+    list-style-type: none;
+    list-style-type: inherit;
+    list-style-type: circle;
+    list-style-type: disc;
+    list-style-type: square;
+    list-style-type: decimal;
+    list-style-type: decimal-leading-zero;
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;  
+
+
+*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 3rem;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*
+
+
+Margin Properties
+    margin : 
+    margin-top : 
+    margin-right :
+    margin-bottom : 
+    margin-left : 
+
+    If the margin property has four values: it means top , right , bottom , left.
+    If the margin property has three values: it means top , right + left , bottom.
+    If the margin property has two values: it means top + bottom , right + left.
+    If the margin property has one value: it means all four margins together.
+
+
+*/
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+ul li label{
+    cursor: pointer;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- */
+
+button{
+    background-color: #03cae4;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    text-align: center;
+    
+
+}
+
+button:hover{
+    background-color: #04adc4;
+}
+
+button:focus{
+    outline: none;
+    background-color: #44b927;
+}
+
+
+
+/*
+
+:focus selector
+    The :focus selector is used to select the element that has focus.
+    Tip: The :focus selector is allowed on elements that accept keyboard events or other user inputs.
+    Above button background-color is #03cae4. 
+    When hover (when cursor on button) , background-color is #04adc4.
+    When click (focus) , background-color is #44b927. ( That is focus ).
+
+outline 
+    An outline is a line drawn outside the element's border.
+    CSS has the following outline properties:
+        outline-style
+        outline-color
+        outline-width
+        outline-offset
+        outline
+
+    The outline-style property specifies the style of the outline, and can have one of the following values:
+        dotted - Defines a dotted outline
+        dashed - Defines a dashed outline
+        solid - Defines a solid outline
+        double - Defines a double outline
+        groove - Defines a 3D grooved outline
+        ridge - Defines a 3D ridged outline
+        inset - Defines a 3D inset outline
+        outset - Defines a 3D outset outline
+        none - Defines no outline
+        hidden - Defines a hidden outline
+
+
+*/
+

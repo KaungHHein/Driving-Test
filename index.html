@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Driving Test Welcome Page</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            height: -webkit-fill-available;
+        }
+
+        body {
+            background-color: #b8c6db;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            height: -webkit-fill-available;
+        }
+
+        #firstheader {
+            text-align: center;
+            padding-top: 5%;
+            color: blueviolet;
+            font-style: italic;
+            font-size: 300%;
+        }
+
+        #label {
+            font-size: 200%;
+            margin: 0 auto;
+        }
+
+        #nameinput {
+            margin: 0 auto;
+            font-size: 150%;
+            width: 300px;
+
+        }
+
+        #btn {
+            box-shadow: 10rem;
+            background-color: aliceblue;
+            font-size: 150%;
+            margin: 0 auto;
+        }
+
+        #requiredname {
+            color: blue;
+            margin: 0 auto;
+            font-size: 200%;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    
+
+    
+        <h1 id="firstheader"><ins>Driving Test</ins></h1>
+        <br><br> <br><br>
+        <label id="label"> Enter Your Name : </label>
+        <br><br> <br><br>
+        <input type="text" id="nameinput" size="30">
+        <br><br> <br><br>
+        <button type="button" id="btn"> Start the Test </button>
+        <br><br><br>
+        <h2 id="requiredname"></h2>
+
+    
+
+
+    <script>
+
+        const name = document.getElementById("nameinput");
+        const Btn = document.getElementById("btn");
+
+        Btn.addEventListener("pointerdown", () => {
+
+            let savedName = name.value;
+
+
+            if (savedName.length == 0) {
+                document.getElementById("requiredname").innerHTML = "Please enter your name !";
+            } else {
+                sessionStorage.setItem("key", savedName);
+                window.location.href = "drivetest.html";
+            }
+
+
+
+        })
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
